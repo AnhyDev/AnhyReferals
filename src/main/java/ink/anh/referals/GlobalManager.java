@@ -20,7 +20,7 @@ public class GlobalManager extends LibraryManager {
 
     private static GlobalManager instance;
     
-    private final AnhyReferals familyPlugin;
+    private final AnhyReferrals familyPlugin;
 
     private MySQLConfig mySQLConfig;
     private FamilyConfig familyConfig;
@@ -32,7 +32,7 @@ public class GlobalManager extends LibraryManager {
     private String defaultLang;
     private boolean debug;
 	
-    private GlobalManager(AnhyReferals familyPlugin) {
+    private GlobalManager(AnhyReferrals familyPlugin) {
         super(familyPlugin);
         this.familyPlugin = familyPlugin;
         this.saveDefaultConfig();
@@ -41,7 +41,7 @@ public class GlobalManager extends LibraryManager {
 
     public static synchronized GlobalManager getInstance() {
         if (instance == null) {
-            instance = new GlobalManager(AnhyReferals.getInstance());
+            instance = new GlobalManager(AnhyReferrals.getInstance());
             instance.initializeDatabase();
 
         }
@@ -102,9 +102,9 @@ public class GlobalManager extends LibraryManager {
         return true;
     }
 
-    private void loadFields(AnhyReferals familyPlugin) {
+    private void loadFields(AnhyReferrals familyPlugin) {
         defaultLang = familyPlugin.getConfig().getString("language", "en");
-        pluginName = ChatColor.translateAlternateColorCodes('&', familyPlugin.getConfig().getString("plugin_name", "AnhyReferals"));
+        pluginName = ChatColor.translateAlternateColorCodes('&', familyPlugin.getConfig().getString("plugin_name", "AnhyReferrals"));
         debug = familyPlugin.getConfig().getBoolean("debug", false);
 
         setMySQLConfig();

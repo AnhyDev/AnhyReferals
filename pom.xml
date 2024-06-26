@@ -28,7 +28,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>ink.anh.referals.AnhyReferals</mainClass>
+                                    <mainClass>ink.anh.referals.AnhyReferrals</mainClass>
                                 </transformer>
                             </transformers>
                             <relocations>

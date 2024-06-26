@@ -12,22 +12,22 @@ public class FamilyConfig {
 
     private static FamilyConfig instance;
 
-    private FamilyConfig(AnhyReferals plugin) {
+    private FamilyConfig(AnhyReferrals plugin) {
         loadConfig(plugin);
     }
 
-    public static FamilyConfig getInstance(AnhyReferals plugin) {
+    public static FamilyConfig getInstance(AnhyReferrals plugin) {
         if (instance == null) {
             instance = new FamilyConfig(plugin);
         }
         return instance;
     }
 
-    public void reloadConfig(AnhyReferals plugin) {
+    public void reloadConfig(AnhyReferrals plugin) {
         loadConfig(plugin);
     }
 
-    private void loadConfig(AnhyReferals plugin) {
+    private void loadConfig(AnhyReferrals plugin) {
         FileConfiguration config = plugin.getConfig();
 
         

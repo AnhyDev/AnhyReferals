@@ -4,12 +4,12 @@ import ink.anh.api.database.AbstractTableRegistrar;
 import ink.anh.api.database.DatabaseManager;
 import ink.anh.api.database.MySQLDatabaseManager;
 import ink.anh.api.database.SQLiteDatabaseManager;
-import ink.anh.referals.AnhyReferals;
+import ink.anh.referals.AnhyReferrals;
 
 public class TableRegistry extends AbstractTableRegistrar {
-    private AnhyReferals familyPlugin;
+    private AnhyReferrals familyPlugin;
 
-	public TableRegistry(AnhyReferals familyPlugin) {
+	public TableRegistry(AnhyReferrals familyPlugin) {
 		this.familyPlugin = familyPlugin;
 	}
 

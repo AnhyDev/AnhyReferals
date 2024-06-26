@@ -2,9 +2,9 @@ package ink.anh.referals;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class AnhyReferals extends JavaPlugin {
+public class AnhyReferrals extends JavaPlugin {
     
-    private static AnhyReferals instance;
+    private static AnhyReferrals instance;
 
     // Method called when the plugin is enabled.
     @Override
@@ -15,7 +15,7 @@ public class AnhyReferals extends JavaPlugin {
 
     }
 
-    public static AnhyReferals getInstance() {
+    public static AnhyReferrals getInstance() {
         return instance;
     }
 }
